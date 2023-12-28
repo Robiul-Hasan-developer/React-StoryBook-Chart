@@ -1,0 +1,306 @@
+
+:root {
+    --base: #4C6FFF; 
+    --base-two: #FF92AE; 
+    --secondary: #A6B7D4; 
+    --heading-color: #16192C; 
+    --body-color: #7A7A9D; 
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    color: var(--body-color);
+}
+h1, h2, h3, h4, h5, h6 {
+    color: var(--heading-color);
+}
+
+/* Custom Classes Start */
+.bg-base {
+    background-color: var(--base) !important;
+}
+
+.bg-base-two {
+    background-color: var(--base-two) !important;
+}
+.bg-secondary {
+    background-color: var(--secondary) !important;
+}
+.p-0 {
+    padding: 0;
+}
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+.mb-4 {
+    margin-bottom: 24px !important;
+}
+.gap--4 {
+    gap: 24px !important;
+}
+.gap--3 {
+    gap: 16px !important;
+}
+.d--flex {
+    display: flex;
+}
+
+.flex--align {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.flex--between {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: var(--base);
+    outline: 0;
+    border: 0;
+    color: #fff;
+    line-height: 1.051;
+    cursor: pointer;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+.btn .icon-left {
+    margin-right: 6px;
+}
+.btn--base {
+    background-color: var(--base);
+}
+/* Custom Classes End */
+
+
+/* Chart Css Start */
+.apexcharts-toolbar {
+    display: none;
+}
+.custom-card__title {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.custom-card {
+    background-color: #fff;
+    box-shadow: 0px 3px 8px -1px rgba(50, 50, 71, 0.05), 0px 0px 1px 0px rgba(12, 26, 75, 0.24);
+    border-radius: 16px;
+    padding: 24px;
+}
+
+/* View Chart Css Start  */
+.viewers-chart {
+    max-width: 255px;
+}
+
+.viewers-chart .apexcharts-legend {
+    display: none;
+}
+
+.viewers-chart__number {
+    font-size: 12px;
+    color: var(--heading-color);
+    font-weight: 400;
+    position: relative;
+    padding-left: 16px;
+    display: block;
+}
+
+.viewers-chart__text {
+    font-size: 12px;
+}
+
+.legend-circle {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: var(--base);
+    border-radius: 50%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.viewers-chart__inner {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.viewers-chart__item {
+    margin-bottom: 24px;
+}
+
+.viewers-chart__item:last-child {
+    margin-bottom: 0;
+}
+
+.alert-message {
+    display: block;
+    margin-top: 24px;
+    padding: 10px;
+    background-color: #ffeff0;
+    color: #D32F2F;
+    border: 1px solid #ffd2d2;
+    border-radius: 4px;
+    font-size: 12px;
+}
+.viewers-chart__chart {
+    position: relative;
+}
+.viewers-chart__total {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 28px;
+    color: var(--heading-color);
+}
+/* View Chart Css End  */
+
+
+/* Area Chart Css Start  */
+.area-chart .apexcharts-legend {
+    justify-content: start !important;
+    top: 0 !important;
+    align-items: center;
+    max-height: 16px !important;
+    margin-top: -5px;
+}
+.apexcharts-legend-marker {
+    height: 8px !important;
+    width: 8px !important;
+}
+.apexcharts-legend-text {
+    font-size: 12px !important;
+    font-family: 'Inter' !important;
+    color: var(--body-color) !important;
+}
+.apexcharts-yaxis-label {
+    font-family: 'Inter' !important;
+}
+/* Area Chart Css end */
+
+
+/* Storage Chart Css Start */
+.storage-custom-card {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: space-between; 
+    max-width: 450px;
+}
+
+.storage-card__icon {
+    width: 38px;
+    background: var(--base-two);
+    height: 38px;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    z-index: 1;
+}
+
+.storage-card__icon::before, .storage-card__icon::after {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 26px;
+    background: #ffffff42;
+    border-radius: 5px;
+    top: 12px;
+    left: 22px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+.storage-card__icon::before {
+    width: 16px;
+    height: 15px;
+    left: -3px;
+    top: -1px;
+    transform: rotate(100deg);
+}
+.storage-card__icon {
+    line-height: 1;
+}
+
+.storage-card__amount {
+    margin-bottom: 6px;
+    padding-bottom: 6px;
+    position: relative;
+    font-size: 18px;
+}
+
+.storage-card__amount::before {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 1px;
+    border-bottom: 1px solid #E4ECF7;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.storage-card__content {
+    margin-top: 30px;
+}
+.storage-card__text {
+    font-size: 14px;
+}
+/* Storage Chart Css end */
+
+/* ETH Card Css Start */
+.heaven-info-card {
+    max-width: 540px;
+}
+.custom-card__title {
+    margin-bottom: 0;
+}
+
+.custom-card__name {
+    font-size: 14px;
+}
+
+.eth-info {
+    font-size: 16px;
+}
+.eth-info__content {
+    position: relative;
+}
+
+.eth-info__content::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 4px;
+    top: -4px;
+    left: 0;
+    background: var(--base);
+    border-radius: 0 0 0 60px;
+}
+
+.custom-card__time {
+    color: #A3AED0;
+}
+/* ETH Card Css end */

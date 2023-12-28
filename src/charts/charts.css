@@ -1,0 +1,134 @@
+/* 
+:root {
+    --base: #4C6FFF; 
+    --base-two: #FF92AE; 
+    --secondary: #A6B7D4; 
+    --heading-color: #16192C; 
+    --body-color: #7A7A9D; 
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    color: var(--body-color);
+}
+h1, h2, h3, h4, h5, h6 {
+    color: var(--heading-color);
+}
+
+
+.bg-base {
+    background-color: var(--base) !important;
+}
+
+.bg-base-two {
+    background-color: var(--base-two) !important;
+}
+.bg-secondary {
+    background-color: var(--secondary) !important;
+}
+
+.d--flex {
+    display: flex;
+}
+
+.flex--align {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.flex--between {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.apexcharts-toolbar {
+    display: none;
+}
+.custom-card__title {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.custom-card {
+    background-color: #fff;
+    box-shadow: 0px 3px 8px -1px rgba(50, 50, 71, 0.05), 0px 0px 1px 0px rgba(12, 26, 75, 0.24);
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.viewers-chart {
+    max-width: 255px;
+}
+
+.viewers-chart .apexcharts-legend {
+    display: none;
+}
+
+.viewers-chart__number {
+    font-size: 12px;
+    color: var(--heading-color);
+    font-weight: 400;
+    position: relative;
+    padding-left: 16px;
+    display: block;
+}
+
+.viewers-chart__text {
+    font-size: 12px;
+}
+
+.legend-circle {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: var(--base);
+    border-radius: 50%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.viewers-chart__inner {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.viewers-chart__item {
+    margin-bottom: 24px;
+}
+
+.viewers-chart__item:last-child {
+    margin-bottom: 0;
+}
+
+.alert-message {
+    display: block;
+    margin-top: 24px;
+    padding: 10px;
+    background-color: #ffeff0;
+    color: #D32F2F;
+    border: 1px solid #ffd2d2;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+
+
+
+
+
+ */
