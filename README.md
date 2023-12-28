@@ -1,6 +1,7 @@
 # Create Chart App by React.js and storyBook.js
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Open this file on VS code. 
+Please open terminal and patse npm run storybook
 
 ## Available Scripts
 
